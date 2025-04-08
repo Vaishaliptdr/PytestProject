@@ -14,3 +14,5 @@ further code executes
 4. We can store fixtures in "conftest.py" file and use across different files
 5. If scope="session" then fixture will run only once though multiple files are run
 Though mentioned it multiple time
+6. "yield" keyword separates between pre condition and post condition
+7. In same fixture we can handle setup and tear down steps separated by yeild keyword

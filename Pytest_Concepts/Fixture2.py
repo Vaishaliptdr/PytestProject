@@ -1,5 +1,6 @@
 # If we define scope as module then fixture will be checked
 # once in the entire test file
+# Scope=module
 
 import pytest
 

@@ -1,6 +1,9 @@
 # Fixture has by default scope as function
 # means every time function runs it will check for fixture
 # Default scope of fixture is "function"
+# adding prefix "test_" to every function to recognize it as test case in Pytest
+# scope=function
+
 
 import pytest
 
