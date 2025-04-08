@@ -1,0 +1,16 @@
+# Pytest is python framework
+# it is test engine for python/
+
+# Every function started with test word will be treated as test in pytest
+# If we name the function with test then green icon comes there
+
+#Fixtures
+1. Reusable code should be marked as fixtures and that can be reused across
+different tests
+2. Pre setup code should be mentioned as fixture and then pass it to test
+as an argument
+3. When test runs then it first checks that fixture is passed or not then only
+further code executes
+4. We can store fixtures in "conftest.py" file and use across different files
+5. If scope="session" then fixture will run only once though multiple files are run
+Though mentioned it multiple time
