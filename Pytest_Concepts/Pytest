@@ -16,3 +16,41 @@ further code executes
 Though mentioned it multiple time
 6. "yield" keyword separates between pre condition and post condition
 7. In same fixture we can handle setup and tear down steps separated by yeild keyword
+8. All package, function, classes and python files name should start with "test_"
+to run as pytest framework
+
+#Install Pytest from terminal of pycharm or command prompt
+Pip install pytest
+
+#Check version
+pytest --version
+
+#Install the Pytest plugin:
+pip install pytest-playwright
+
+#Install the required browsers:
+playwright install
+
+#To run file form terminal
+Pytest file_name.py
+
+#To run individual test from terminal
+Pytest file_name.py::test_name   # do not give (arguments)
+Or
+-s will include print statements
+Pytest file_name.py::test_name -s
+
+#To run framework from command line
+Pytest
+But here the files named with test prefix will run only
+
+#To run tagged tests from framework
+pytest -m tag_name(smoke, regression etc)
+
+#To run playwright test from terminal
+Navigate to that directory by cd directory name, then
+Pytest file_name::Function_name –headed
+
+
+# Playwright assertion using "expect" keyword
+# Pytest assertion using "assert" keyword
