@@ -45,6 +45,7 @@ def test_HandlingStrings(page:Page):
     page.goto("https://rahulshettyacademy.com/loginpagePractise/")
 
     with page.expect_popup() as new_page_info:
+# clicking on this locator popup can open so mentioned before this
         page.locator(".blinkingText").click()
         childPage = new_page_info.value
         text= childPage.locator(".red").text_content()
