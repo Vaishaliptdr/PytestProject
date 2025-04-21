@@ -1,4 +1,6 @@
 # Save and inject the session cookies into browser at run time with playwright
+# Without navigating to login page, use can move to Orders page
+
 import time
 
 from playwright.sync_api import Playwright, expect
